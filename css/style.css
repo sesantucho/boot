@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Montserrat:ital,wght@0,100..900;1,100..900');
+
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* ------------------------------------------header------------------------------------------*/
+header {
+    grid-area: header;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.navbar-brand {
+    font-size: 25px;
+    font-family: "Cinzel Decorative", serif;
+    color: rgb(255, 255, 255);
+}
+/* ------------------------------------------Main------------------------------------------*/
+main{
+    font-family: "Montserrat", sans-serif;
+    background-color: rgb(26, 26, 26);
+}
+/* ------------------------------------------HERO------------------------------------------*/
+.hero {
+    width: 100%;
+    background-image: url(../img/fondo\ arquero2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.hero div {
+    height: calc(100vh - 56px);
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.hero div h2 {
+    font-size: 45px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+    color: rgb(251, 221, 0);
+    text-transform: uppercase;
+    text-align: center;
+}
+.hero div a {
+    border-radius: 15px;
+    padding: 15px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(253, 107, 39);
+    font-size: 30px;
+    font-weight: 800;
+    overflow: hidden;
+    position: relative;
+    text-decoration: none;
+}
+/* ------------------------------------------SERVICIOS------------------------------------------*/
+.servicios h2 {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 20px;
+    /* font-weight: 400; */
+    font-size: 25px;
+}
+.servicios div div img {
+    width: 94%;
+    border-radius: 15px;
+}
+.servicios div div h3 {
+    padding: 8px;
+    color: rgba(255, 255, 255, 0.414);
+    font-size: 20px;
+}
+.servicios div div a {
+    padding: 12px;
+    margin: 10px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(253, 107, 39);
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
+}
+.servicios div div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 26%;
+    /* background-color:rgb(44, 47, 51); */
+    border: solid 1px rgb(44, 47, 51);
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+.servicios div {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+/* ------------------------------------------GALERIA------------------------------------------*/
+.galeria {
+    width: 100%;
+    height: 200px;
+    margin-top: 150px;
+    margin-bottom: 100px;
+    background-image: url(../img/galeria.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.galeria a {
+    color: white;
+    font-size: 100px;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-decoration: none;
+}
+/* ------------------------------------------NOSOTROS------------------------------------------*/
+.nosotros {
+    display: flex;
+}
+.nosotros img {
+    width: 50%;
+    object-fit: contain;
+}
+.nosotros div {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: white;
+    padding: 30px;
+}
+.nosotros h2 {
+    font-size: 25px;
+}
+.nosotros p {
+    font-size: 20px;
+}
+/* --------------------------------------PAGINA NOSOTROS--------------------------------------*/
+.nosotrosPage {
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    padding: 40px;
+}
+.nosotrosPage h2 {
+    padding: 30px;
+}
+.nosotrosPage p span {
+    color: rgb(253, 107, 39);
+}
+/* ------------------------------------------CONTACTO------------------------------------------*/
+.contacto { 
+    padding: 20px;
+}
+.contenedorContacto {
+    width: 100%;
+    background-color: rgba(44, 47, 51, 0.408);
+    border-radius: 20px;
+    display: flex;
+}
+.cogeComentario {
+    height: 500px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px;
+}
+.cogeComentario textarea {
+    height: 350px;
+}
+.cogeComentario label {
+    color: white;
+    /* width: 100%; */  
+}
+.cogeComentario a {
+    padding: 12px;
+    background-color: rgb(253, 107, 39);
+    color: white;
+    border-radius: 10px;
+    font-weight: 700;
+    width: 100px;
+    text-align: center;
+    text-decoration: none;
+}
+.cogeDatos {
+    height: 500px;
+    width: 50%;
+}
+.cogeDatos div {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 40px;
+    color: white;
+}
+.cogeDatos div input {
+    width: 60%;
+}
+.cogeDatos label {
+    margin-right: 20px;
+    width: 20%;
+}
+/* --------------------------------------PAGINA CONTACTO--------------------------------------*/
+.contactoPage{
+    padding: 40px;
+    display: flex;
+    /* height: calc(100vh - 56px); */
+    width: 100%;
+    color: white;
+}
+.datosPage{
+    width: 50%;
+    height:100%;
+    padding-right: 50px;
+    /* border: solid 1px rgb(251, 255, 0); */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.datosPage p{
+    margin-top: 20px;
+}
+.comentarioPage{
+    width: 50%;
+    height:100%;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color:rgb(44, 47, 51);
+}
+.comentarioPage a{
+    padding: 12px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(253, 107, 39);
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
+    width: 120px;
+    text-align: center;
+}
+.contactoPage p span {
+    color: rgb(253, 107, 39);
+}
+/* ------------------------------------------FOOTER------------------------------------------*/
+footer {
+    background-color:rgb(44, 47, 51);
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+footer div img {
+    width: 50px;
+}
+
+footer iframe {
+    width: 200px;
+    height: auto;
+    margin: 20px;
+}
+
+footer svg{
+    color: rgb(255, 180, 127);
+}
+
+/* ------------------------------------------MEDIA------------------------------------------*/
+@media screen and (max-width:980px) {
+    .servicios div div {
+        width: 30%;
+    }
+    .servicios div div h3 {
+        font-size: 15px;
+    }
+}
+@media screen and (max-width:785px) {
+    .hero div {
+        width: 100%;
+    }
+    .hero div h2 {
+        font-size: 35px;
+        background-color: rgba(133, 133, 133, 0.329);
+        padding: 20px;
+        border-radius: 20px;
+    }
+    .hero {
+        background-position: right;
+    }
+    .nosotros img {
+        display: none;
+    }
+    .contenedorContacto {
+    flex-direction: column;
+    }
+    .cogeComentario {
+        width: 100%;
+        color: white;
+    }
+    .cogeDatos{
+        width: 100%;
+        height: auto;
+    }
+    .servicios div div {
+        width: 30%;
+        border: solid 1px rgb(44, 47, 51);
+        border-radius: 15px;
+    }
+}
+@media screen and (max-width:655px) {
+    .servicios div {
+        display: flex;
+        flex-direction: column;
+    }
+    .servicios div div {
+        width: 80%;
+    }
+    footer iframe {
+        display: none;
+    }
+    .galeria a{
+        font-size: 70px;
+    }
+    .contactoPage{
+        flex-direction: column;
+        padding: 20px;
+    }
+    .comentarioPage{
+        width: 100%;
+    }
+    .datosPage{
+        width: 100%;
+    }
+
+}
