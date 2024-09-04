@@ -1,0 +1,27 @@
+$color-bg: rgb(26, 26, 26);
+$color-amarillo: rgb(237, 196, 71);
+$color-gris:rgb(90, 99, 109);
+$color-gris2:#9FAAAD;
+
+%boton{
+    color: rgb(255, 255, 255);
+    background-color: rgb(253, 107, 39); 
+    overflow: hidden;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+}
+%animacion-boton{
+    content:"" ;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0%;
+    background-color: rgba(255, 255, 255, 0.252);
+    transition-property: width;
+    transition-duration: 0.5s;
+    transition-timing-function:ease;
+}
+

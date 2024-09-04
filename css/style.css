@@ -8,10 +8,10 @@
 }
 /* ------------------------------------------header------------------------------------------*/
 header {
-    grid-area: header;
     position: sticky;
     top: 0;
     z-index: 1;
+    background-color: rgba(21, 21, 21, 0.974);
 }
 .navbar-brand {
     font-size: 25px;
@@ -26,24 +26,37 @@ main{
 /* ------------------------------------------HERO------------------------------------------*/
 .hero {
     width: 100%;
-    background-image: url(../img/fondo\ arquero2.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-.hero div {
     height: calc(100vh - 56px);
-    width: 60%;
+    background-color: rgba(26, 26, 26, 0.836);
+    overflow: hidden;
+    position: relative;
+}
+.hero video{
+    top: 0;
+    height: 100%;
+    opacity: 15%;
+    position: absolute;
+}
+
+.hero div {
+    position: absolute;
+    height: calc(100vh - 56px);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
+    padding: 100px;
+    /* border: solid 1px rgb(153, 255, 0); */
 }
 .hero div h2 {
     font-size: 45px;
     font-family: "Montserrat", sans-serif;
     font-weight: 900;
-    color: rgb(251, 221, 0);
+    color: rgb(237, 196, 71);
     text-transform: uppercase;
     text-align: center;
 }
@@ -53,11 +66,55 @@ main{
     color: rgb(255, 255, 255);
     background-color: rgb(253, 107, 39);
     font-size: 30px;
+    font-weight: 800;   
+    overflow: hidden;
+    position: relative;
+    text-decoration: none;
+}
+    .hero div a:before{
+    content:"" ;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0%;
+    background-color: rgba(255, 255, 255, 0.252);
+    transition-property: width;
+    transition-duration: 0.5s;
+    transition-timing-function:ease;
+    }
+    .hero div a:hover:before{
+    width: 100%;
+    }
+
+    /* .hero div a {
+    border-radius: 15px;
+    padding: 15px;
+    color: rgb(255, 255, 255);
+    border: solid 1px rgb(253, 107, 39);
+    font-size: 30px;
     font-weight: 800;
     overflow: hidden;
     position: relative;
     text-decoration: none;
 }
+
+    .hero div a::before{
+    content:"" ;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0%;
+    background-color: rgb(253, 107, 39);
+    transition-property: width;
+    transition-duration: 0.5s;
+    transition-timing-function:ease;
+    }
+    .hero div a:hover::before{
+        width: 100%;
+    } */
+
 /* ------------------------------------------SERVICIOS------------------------------------------*/
 .servicios h2 {
     color: rgb(255, 255, 255);
@@ -94,6 +151,13 @@ main{
     border: solid 1px rgb(44, 47, 51);
     border-radius: 15px;
     margin-bottom: 20px;
+    opacity: 60%;
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+.servicios div div:hover {
+    scale: 1.05;
+    opacity: 100%;
 }
 .servicios div {
     display: flex;
@@ -114,6 +178,7 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 .galeria a {
     color: white;
@@ -122,6 +187,7 @@ main{
     font-weight: 700;
     text-decoration: none;
 }
+
 /* ------------------------------------------NOSOTROS------------------------------------------*/
 .nosotros {
     display: flex;
@@ -262,21 +328,17 @@ footer {
     justify-content: space-between;
     padding: 20px;
 }
-
 footer div img {
     width: 50px;
 }
-
 footer iframe {
     width: 200px;
     height: auto;
     margin: 20px;
 }
-
 footer svg{
     color: rgb(255, 180, 127);
 }
-
 /* ------------------------------------------MEDIA------------------------------------------*/
 @media screen and (max-width:980px) {
     .servicios div div {

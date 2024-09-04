@@ -1,0 +1,27 @@
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: rgba(21, 21, 21, 0.974);
+    nav{
+        div{
+            div{
+                ul{
+                    li{
+                        .dropdown-menu{
+                            background-color: rgba(21, 21, 21, 0.974);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.navbar-brand {
+    font-size: 25px;
+    font-family: "Cinzel Decorative", serif;
+    color: rgb(255, 255, 255);
+}
+.logotipo{
+    width: 30px;
+}

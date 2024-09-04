@@ -1,0 +1,25 @@
+.galeriaPage{
+
+    .containerGaleria{
+        display: grid;
+        width: 100%;
+        place-content:center;
+        grid-template-rows: 200px 200px 200px;
+        grid-template-columns: 200px 200px 200px;
+        column-gap: 15px;
+        row-gap: 15px;
+            img{
+                filter: brightness(0.5);
+                width: 100%;
+                border-radius: 12px;
+                transition: scale 300ms ease-out, filter 300ms ease-out;
+            }
+            img:hover{
+                scale:1.1 ;
+                filter: brightness(1);
+            }
+    }
+}
+.img10{
+    display: none;
+}

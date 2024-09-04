@@ -1,0 +1,33 @@
+.serviciosPage {
+    color: $color-gris2;
+    h2 {
+        padding: 60px;
+        font-size: 30px;
+    }
+    p {
+        padding: 60px;
+        text-align: justify;
+        font-size: 20px;
+    }
+    ul {
+        list-style: none;
+        padding: 0px;
+        li {
+            display: flex;
+            border: solid 1px $color-gris;
+            border-radius: 20px;
+            overflow: hidden;
+            color: $color-gris2;
+            padding: 0px;
+            margin: 60px;
+            div {
+                p,h3 {
+                    padding: 20px;
+                }
+            }
+            img {
+                object-fit: cover;
+            }
+        }
+    }
+}

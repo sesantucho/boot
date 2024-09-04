@@ -1,0 +1,208 @@
+main{
+    font-family: "Montserrat", sans-serif;
+}
+
+.hero {
+    width: 100%;
+    height: calc(100vh - 56px);
+    overflow: hidden;
+    position: relative;
+    video{
+        top: 0;
+        height: 100%;
+        opacity: 15%;
+        position: absolute;
+    }
+    div {
+        position: absolute;
+        height: calc(100vh - 56px);
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding: 10%;
+        h1 {
+            font-size: 45px;
+            font-weight: 900;
+            color:$color-amarillo;
+            text-transform: uppercase;
+            text-align: center;
+        }
+        a {
+            @extend %boton;
+            font-size: 30px;
+            border-radius: 15px;
+            padding: 15px;
+            font-weight: 800;
+        }
+        a:before{
+            @extend %animacion-boton;
+        }
+        a:hover:before{
+            width: 100%;
+        }
+        
+    }
+}
+    
+.servicios{
+    h2 {
+        color:$color-gris2;
+        text-align: center;
+        padding: 20px;
+        font-size: 25px;
+    }
+    div{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        div{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            width: 26%;
+            border: solid 1px rgb(44, 47, 51);
+            border-radius: 15px;
+            margin-bottom: 20px;
+            transition: scale 300ms ease-out, filter 300ms ease-out;
+            filter: brightness(0.5);
+            img {
+                width: 94%;
+                border-radius: 15px;
+            }
+            h3 {
+                padding: 8px;
+                color:$color-gris;
+                font-size: 20px;
+            }
+            a {
+                padding: 12px;
+                margin: 10px;
+                border-radius: 10px;
+                font-weight: 700;
+                @extend %boton;
+            }
+            a:before{
+                @extend %animacion-boton;
+            }
+            a:hover:before{
+                width: 100%;
+            }
+        }
+        div:hover {
+            scale: 1.05;
+            filter: brightness(1);
+            -webkit-box-shadow: 0px 9px 12px -3px rgba(0,0,0,0.75);
+            -moz-box-shadow: 0px 9px 12px -3px rgba(0,0,0,0.75);
+            box-shadow: 0px 9px 12px -3px rgba(0,0,0,0.75);
+            h3{
+                color:$color-amarillo;
+            }
+        }
+    }
+}
+
+.galeria {
+    width: 100%;
+    height: 200px;
+    margin-top: 150px;
+    margin-bottom: 100px;
+    background-image: url(../img/galeria.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    a {
+        color: white;
+        font-size: 100px;
+        text-transform: uppercase;
+        font-weight: 700;
+        text-decoration: none;
+    }
+}
+
+.nosotros {
+    display: flex;
+    img {
+        width: 50%;
+        object-fit: contain;
+    }
+    div {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        color: $color-gris2;
+        padding: 30px;
+        h2 {
+            font-size: 25px;
+            padding: 20px;
+        }
+        p {
+            font-size: 20px;
+        }
+    }
+}
+
+.contacto { 
+    padding: 20px;
+    .contenedorContacto {
+        width: 100%;
+        height: 100%;
+        background-color: rgba(44, 47, 51, 0.408);
+        border-radius: 20px;
+        display: flex;
+        .cogeComentario {
+            height: 500px;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            padding: 20px;
+            textarea {
+                height: 350px;
+            }
+            label {
+                color: white;
+            }
+            a {
+                padding: 12px;
+                margin: 10px;
+                border-radius: 10px;
+                font-weight: 700;
+                width: 100px;
+                @extend %boton;
+            }
+            a:before{
+                @extend %animacion-boton;
+            }
+            a:hover:before{
+                width: 100%;
+            }
+        }
+        .cogeDatos {
+            height: 500px;
+            width: 50%;
+            div {
+                display: flex;
+                justify-content: space-evenly;
+                margin: 40px;
+                color: white;
+                input {
+                    width: 60%;
+                }
+            }
+            label {
+                margin-right: 20px;
+                width: 20%;
+            }
+        }
+    }
+}

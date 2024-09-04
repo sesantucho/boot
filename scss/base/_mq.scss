@@ -1,0 +1,153 @@
+@media screen and (max-width:980px) {
+    .servicios {
+        div {
+            div {
+                width: 30%;
+                h3 {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+    .hero {
+        div {
+            h1 {
+                font-size: 35px;
+            }
+        }
+    }
+    .serviciosPage {
+        ul{
+            li{
+                position: relative;
+                img{
+                    width: 100%;
+                    object-fit:fill;
+                    filter: opacity(0.1);
+                }
+                div{
+                    width: 100%;
+                    position: absolute;
+                    z-index: 1;
+                }
+            }   
+        }
+    }
+}
+
+@media screen and (max-width:785px) {
+    .nosotros {
+        img {
+            display: none;
+        }
+    }
+}
+@media screen and (max-width:690px) {
+    .serviciosPage {
+        h2,p{
+            padding: 20px;
+            font-size: 15px;
+        }
+        ul{
+            li{
+                flex-direction:column-reverse;
+                align-items: center;
+                margin: 20px;
+                padding: 0px;
+                img{
+                    width: 100%;
+                    object-fit:fill;
+                    position:initial;
+                    filter: opacity(1);
+                }
+                div{
+                    position: initial;
+                    padding: 5px;
+                }
+            }   
+        }
+    }
+}
+
+@media screen and (max-width:655px) {
+    .hero {
+        background-image: linear-gradient(to right,
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.7)), url(../img/fondomobile.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        video {
+            display: none;
+        }
+        div {
+            h1 {
+                font-size: 28px;
+            }
+        }
+    }
+    .servicios {
+        div {
+            display: flex;
+            flex-direction: column;
+            div {
+                width: 80%;
+            }
+        }
+    }
+    .galeria {
+        a {
+            font-size: 70px;
+        }
+    }
+    .contacto {
+        .contenedorContacto {
+            flex-direction: column;
+            .cogeComentario {
+                width: 100%;
+                height: 350px;
+                textarea {
+                    height: 225px;
+                }
+            }
+            .cogeDatos {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    footer {
+        iframe {
+            display: none;
+        }
+    }
+    .contactoPage{
+        flex-direction: column;
+        .comentarioPage,.datosPage {
+            width: 100%;
+        }
+    }
+    .titulos{
+        font-size: 60px;
+    }
+}
+
+@media screen and (max-width:680px) {
+    .galeriaPage{
+        .containerGaleria{
+            grid-template-rows: 200px 200px 200px 200px 200px;
+            grid-template-columns: 200px 200px ;    
+        }
+    }
+    .img10{
+        display:flex;
+    }
+}
+@media screen and (max-width:440px) {
+    .galeriaPage{
+        .containerGaleria{
+            grid-template-rows: 250px 250px 250px 250px 250px;
+            grid-template-columns: 250px;
+        }
+    }   
+}

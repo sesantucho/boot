@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/estilos.css">  
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
 
-    <header class="header">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+    <header>
+        <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Arcadia</a>
+                <a class="navbar-brand" href="#"><img class="logotipo" src="../img/logo.png" alt=""></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -33,9 +33,9 @@
                                 Servicios
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Arqueria para niños</a></li>
-                                <li><a class="dropdown-item" href="#">Arqueria para adultos</a></li>
-                                <li><a class="dropdown-item" href="#">Arqueria para mayores</a></li>
+                                <li><a class="dropdown-item" href="#niños">Arqueria para niños</a></li>
+                                <li><a class="dropdown-item" href="#adultos">Arqueria para adultos</a></li>
+                                <li><a class="dropdown-item" href="#mayores">Arqueria para mayores</a></li>
                                 <!-- <li>
                                     <hr class="dropdown-divider">
                                 </li>
@@ -46,14 +46,48 @@
                             <a class="nav-link disabled" aria-disabled="true">Disabled</a>
                         </li> -->
                     </ul>
-                    <form class="d-flex" role="search">
+                    <!-- <form class="d-flex" role="search">
                         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                         <button class="btn btn-outline-warning" type="submit">Search</button>
-                    </form>
+                    </form> -->
                 </div>
             </div>
         </nav>
     </header>
+
+    <main>
+        <h1 class="titulos">Servicios</h1>
+        <section class="serviciosPage">
+            <h2>¡Bienvenidos a Arcadia, la escuela de arquería donde cada generación encuentra su lugar!</h2>
+            <p>En Arcadia, ofrecemos una experiencia de tiro con arco adaptada a todas las edades. Desde los más jóvenes, que descubren el mundo del arco de manera divertida y segura, hasta los adultos que buscan un nuevo desafío y una forma de relajarse, y los adultos mayores que desean mantener la agilidad y disfrutar de una actividad enriquecedora. Nuestro equipo de instructores apasionados está aquí para guiarte en cada paso, brindando atención personalizada y un ambiente acogedor para todos.
+
+                ¡Únete a nuestra comunidad y descubre cómo el tiro con arco puede ser una fuente de alegría, desarrollo personal y conexión! Ven a Arcadia y déjate inspirar por el arte del tiro con arco. ¡Te esperamos!</p>
+            <ul>
+                <li id="niños">
+                    <div>
+                        <h3>Arquería para Niños</h3>
+                        <p>¡Descubre la magia del tiro con arco en Arcadia! Nuestra escuela ofrece clases especialmente diseñadas para niños, donde combinamos diversión y aprendizaje en cada sesión. En un ambiente seguro y estimulante, los pequeños arqueros aprenderán a manejar el arco, desarrollarán habilidades de coordinación y concentración, y disfrutarán de actividades creativas y emocionantes. Con instructores apasionados y métodos pedagógicos adaptados a su edad, tus hijos podrán experimentar la satisfacción de dominar el arte del tiro con arco mientras se divierten. ¡Inscríbelos hoy y déjalos explorar el mundo de la arquería con nosotros!</p>
+                    </div>
+                    <img src="../img/galeria/galeria (4).jpg" alt="">
+                </li>
+                <li id="adultos">
+                    <div>
+                        <h3>Arquería para Adultos</h3>
+                        <p>Encuentra un nuevo desafío en Arcadia. Ofrecemos clases de arquería para adultos que desean explorar un pasatiempo apasionante y gratificante. Ya sea que estés buscando mejorar tu concentración, encontrar una forma efectiva de relajarte, o simplemente disfrutar de una actividad física que te permita conectar contigo mismo y con la naturaleza, nuestras sesiones están diseñadas para ti. Contamos con instructores expertos que te guiarán en cada paso, desde lo básico hasta técnicas avanzadas. Únete a nuestra comunidad y transforma el tiro con arco en una parte integral de tu vida. ¡Inscríbete ahora y comienza tu viaje en el mundo de la arquería!</p>
+                    </div>
+                    <img src="../img/galeria/galeria (8).jpg" alt="">
+                </li>
+                <li id="mayores">
+                    <div>
+                        <h3>Arquería para Mayores</h3>
+                        <p>Revive la elegancia y precisión del tiro con arco en Arcadia. En nuestra escuela, ofrecemos clases adaptadas para adultos mayores que buscan una actividad que combine bienestar físico y mental. El tiro con arco es una excelente manera de mantener la agilidad, mejorar la coordinación y disfrutar de un tiempo al aire libre en un entorno tranquilo y amigable. Nuestros instructores están capacitados para ofrecerte una experiencia cómoda y enriquecedora, adaptando las clases a tus necesidades y ritmo. Ven y únete a nosotros para descubrir cómo el tiro con arco puede aportar alegría y vitalidad a tus años dorados. ¡Estamos aquí para ayudarte a disfrutar cada momento!</p>
+                    </div>
+                    <img src="../img/galeria/galeria (1).jpg" alt="">
+                </li>
+            </ul>
+            
+        </section>
+    </main>
 
 
     <footer class="footer">
