@@ -64,7 +64,6 @@ main {
 .hero video {
   top: 0;
   height: 100%;
-  opacity: 15%;
   position: absolute;
 }
 .hero div {
@@ -79,6 +78,8 @@ main {
   justify-content: space-around;
   align-items: center;
   padding: 10%;
+  background: rgb(20, 20, 20);
+  background: linear-gradient(180deg, rgb(20, 20, 20) 1%, rgba(26, 26, 26, 0.2414215686) 48%, rgb(26, 26, 26) 100%);
 }
 .hero div h1 {
   font-size: 45px;
@@ -265,7 +266,7 @@ footer iframe {
 .nosotrosPage {
   color: #9FAAAD;
   font-size: 20px;
-  padding: 8% 10% 5% 10%;
+  padding: 5% 10% 5% 10%;
 }
 .nosotrosPage p {
   text-align: center;
@@ -284,6 +285,7 @@ footer iframe {
   grid-template-columns: 200px 200px 200px;
   column-gap: 15px;
   row-gap: 15px;
+  margin: 15px;
 }
 .galeriaPage .containerGaleria img {
   filter: brightness(0.5);
