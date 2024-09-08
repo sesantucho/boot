@@ -32,12 +32,9 @@
     justify-content: space-evenly;
     background-color:rgb(44, 47, 51);
     a{
-        padding: 12px;
-        border-radius: 10px;
-        font-size: 20px;
-        font-weight: 700;
-        width: 120px;
+        @include boton(20px, 12px, 700, 10px);
         @extend %boton;
+        width: 120px;
     }
     a:before{
         @extend %animacion-boton;

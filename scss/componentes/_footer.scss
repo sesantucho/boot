@@ -6,6 +6,10 @@ footer {
     justify-content: space-between;
     padding: 20px;
     div{
+        h2{
+            color:$color-gris  ;
+            font-size: $subtitulos-size;
+        }
         img {
             width: 50px;
         }

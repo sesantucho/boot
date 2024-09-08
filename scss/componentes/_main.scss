@@ -36,10 +36,7 @@ main{
         }
         a {
             @extend %boton;
-            font-size: 30px;
-            border-radius: 15px;
-            padding: 15px;
-            font-weight: 800;
+            @include boton(30px, 15px, 800, 15px);
         }
         a:before{
             @extend %animacion-boton;
@@ -56,7 +53,7 @@ main{
         color:$color-gris2;
         text-align: center;
         padding: 20px;
-        font-size: 25px;
+        font-size: $subtitulos-size;
     }
     div{
         display: flex;
@@ -82,10 +79,8 @@ main{
                 font-size: 20px;
             }
             a {
-                padding: 12px;
+                @include boton(20px, 12px, 700, 10px);
                 margin: 10px;
-                border-radius: 10px;
-                font-weight: 700;
                 @extend %boton;
             }
             a:before{
@@ -144,7 +139,7 @@ main{
         color: $color-gris2;
         padding: 30px;
         h2 {
-            font-size: 25px;
+            font-size: $subtitulos-size;
             padding: 20px;
         }
         p {
@@ -154,6 +149,10 @@ main{
 }
 
 .contacto { 
+    h2{
+        color:$color-gris2  ;
+        font-size: $subtitulos-size;
+    }
     padding: 20px;
     .contenedorContacto {
         width: 100%;
@@ -175,11 +174,9 @@ main{
                 color: white;
             }
             a {
-                padding: 12px;
                 margin: 10px;
-                border-radius: 10px;
-                font-weight: 700;
                 width: 100px;
+                @include boton(15px, 12px, 700, 10px);
                 @extend %boton;
             }
             a:before{

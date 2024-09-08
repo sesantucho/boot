@@ -2,6 +2,7 @@ $color-bg: rgb(26, 26, 26);
 $color-amarillo: rgb(237, 196, 71);
 $color-gris:rgb(90, 99, 109);
 $color-gris2:#9FAAAD;
+$subtitulos-size:25px;
 
 %boton{
     color: rgb(255, 255, 255);
@@ -11,6 +12,12 @@ $color-gris2:#9FAAAD;
     text-decoration: none;
     text-transform: uppercase;
     text-align: center;
+}
+@mixin boton($fonts, $pad, $fontw,$borderr ){
+    font-size: $fonts;
+    padding: $pad;
+    font-weight: $fontw;
+    border-radius: $borderr; 
 }
 %animacion-boton{
     content:"" ;
