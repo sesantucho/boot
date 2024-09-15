@@ -25,6 +25,7 @@
 .titulos {
   font-size: 80px;
   font-weight: 800;
+  color: rgb(237, 196, 71);
 }
 
 body {
@@ -48,7 +49,7 @@ header nav div div ul li .dropdown-menu {
 }
 
 .logotipo {
-  width: 30px;
+  width: 45px;
 }
 
 main {
@@ -57,7 +58,7 @@ main {
 
 .hero {
   width: 100%;
-  height: calc(100vh - 56px);
+  height: calc(100vh - 71px);
   overflow: hidden;
   position: relative;
 }
@@ -68,16 +69,16 @@ main {
 }
 .hero div {
   position: absolute;
-  height: calc(100vh - 56px);
+  height: calc(100vh - 71px);
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
-  padding: 10%;
+  padding: 0% 10% 0% 10%;
   background: rgb(20, 20, 20);
   background: linear-gradient(180deg, rgb(20, 20, 20) 1%, rgba(26, 26, 26, 0.2414215686) 48%, rgb(26, 26, 26) 100%);
 }
@@ -153,8 +154,8 @@ main {
 .galeria {
   width: 100%;
   height: 200px;
-  margin-top: 150px;
-  margin-bottom: 100px;
+  margin-top: 120px;
+  margin-bottom: 30px;
   background-image: url(../img/galeria.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -282,7 +283,7 @@ footer iframe {
   text-align: center;
 }
 .nosotrosPage p span {
-  color: rgb(90, 99, 109);
+  color: rgb(237, 196, 71);
   text-align: center;
   font-size: 30px;
 }
@@ -315,7 +316,6 @@ footer iframe {
 .contactoPage {
   padding: 40px;
   display: flex;
-  /* height: calc(100vh - 56px); */
   width: 100%;
   color: white;
 }
@@ -327,7 +327,6 @@ footer iframe {
   width: 50%;
   height: 100%;
   padding-right: 50px;
-  /* border: solid 1px rgb(251, 255, 0); */
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -453,6 +452,9 @@ footer iframe {
   .hero div h1 {
     font-size: 28px;
   }
+  .hero div h1 span {
+    display: none;
+  }
   .servicios div {
     display: flex;
     flex-direction: column;
@@ -491,6 +493,15 @@ footer iframe {
   }
   .titulos {
     font-size: 60px;
+  }
+  .nosotrosPage {
+    font-size: 15px;
+  }
+  .nosotrosPage p {
+    text-align: center;
+  }
+  .nosotrosPage p span {
+    font-size: 20px;
   }
 }
 @media screen and (max-width: 680px) {

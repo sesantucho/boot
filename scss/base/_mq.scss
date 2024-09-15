@@ -83,6 +83,9 @@
         div {
             h1 {
                 font-size: 28px;
+                span{
+                    display: none;
+                }
             }
         }
     }
@@ -135,6 +138,15 @@
     .titulos{
         font-size: 60px;
     }
+    .nosotrosPage {
+        font-size: 15px;
+        p{
+            text-align: center;
+            span{
+                font-size: 20px;
+            }
+        }
+}
 }
 
 @media screen and (max-width:680px) {
